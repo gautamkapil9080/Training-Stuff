@@ -1,0 +1,20 @@
+// LCM in the simple method 
+#include<stdio.h>
+
+
+int main() {
+    int a, b, big;
+    scanf("%d%d", & a, & b);
+    big = a > b ? a : b;
+    int value = big;
+    while (1) {
+        if (big % a == 0 && big % b == 0) {
+            break;
+        }
+        else {
+            big = big + value;
+        }
+    }
+
+    printf("The output of the code is %d", big);
+}
