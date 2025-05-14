@@ -1,0 +1,17 @@
+// Where we are using the simple properties to find the number words present in the paragaraphs
+
+
+#include <stdio.h>
+
+int main() {
+	char paragraph[30];
+	gets(paragraph);
+int count=0;
+for(int i=0;i<strlen(paragraph);i++){
+    if(paragraph[i]==" "&& paragraph[i+1]!=" "){
+        count++
+    }
+}
+printf("the word is %d",count);
+}
+
