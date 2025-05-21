@@ -1,0 +1,21 @@
+// Find the prime factor of the number 
+#include<stdio.h>
+void factor(int n,int a){
+    if(n==1){
+        return ;
+    }
+    else{
+    while(n%a!=0){
+        a++;
+        
+    }
+    printf("%d",a);
+    factor(n/2,a);
+}}
+int main(){
+    int n,a=2;
+    printf("Enter a number");
+    scanf("%d",&n);
+    factor(n,a);
+    
+}
