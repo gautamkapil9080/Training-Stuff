@@ -10,7 +10,7 @@ void factor(int n,int a){
         
     }
     printf("%d",a);
-    factor(n/2,a);
+    factor(n/a,2);
 }}
 int main(){
     int n,a=2;
